@@ -15,7 +15,7 @@ const Herosection = () => {
 
             <h1 className="mb-2 font-extrabold text-7xl">Taiwo</h1>
 
-            <p className="mb-4 text-2xl font-bold"> a frontend web developer</p>
+            <p className="mb-4 text-2xl font-bold"> a software developer</p>
             <motion.a  whileHover={{
                 scale: 1.1,
                 textShadow: "0px 0px 8px rgb(255,255,255)",
