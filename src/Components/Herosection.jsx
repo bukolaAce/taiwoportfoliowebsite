@@ -5,7 +5,6 @@ import { Fade } from "react-awesome-reveal";
 // import { AttentionSeeker } from "react-awesome-reveal";
 
 const Herosection = () => {
- 
   return (
     <>
       <div className="flex items-center   text-white  bg-[#0C151D] md:min-h-[15rem]  md:py-14 py-14">
@@ -15,14 +14,18 @@ const Herosection = () => {
 
             <h1 className="mb-2 font-extrabold text-7xl">Taiwo</h1>
 
-            <p className="mb-4 text-2xl font-bold"> a frontend web developer</p>
-            <motion.a  whileHover={{
+            <p className="mb-4 text-2xl font-bold"> Software Developer</p>
+            <motion.a
+              whileHover={{
                 scale: 1.1,
                 textShadow: "0px 0px 8px rgb(255,255,255)",
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
-              }}  target="_blank" href="https://drive.google.com/file/d/1UMNQ4Oy0d8sCumpL0FzkQ3K2807Jhbjm/view?usp=drive_link"  className="btn btn-info">
+              }}
+              target="_blank"
+              href="https://drive.google.com/file/d/164iT4D9KyJT1_k57aushvw1ScRBo4P6f/view?usp=drive_link"
+              className="btn btn-info"
+            >
               Download CV
-              
             </motion.a>
           </Fade>
         </div>
