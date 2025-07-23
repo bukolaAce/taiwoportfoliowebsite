@@ -1,15 +1,17 @@
 import {
-  faInstagramSquare,
+  faGithub,
   faTwitter,
   faWhatsappSquare,
+  
 } from "@fortawesome/free-brands-svg-icons";
+
 import { faX } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
 const Contact = ({ openModal, handleModal }) => {
-  
   const [input, setInput] = useState({
     Name: "",
     Email: "",
@@ -72,27 +74,32 @@ const Contact = ({ openModal, handleModal }) => {
                 )}
               </div>
               <div className="flex items-center justify-center mt-5 space-x-6">
+                <a href="https://github.com/bukolaAce">
+                  {" "}
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-[2.3rem] text-white"
+                  />
+                </a>
                 <a href="https://api.whatsapp.com/send?phone=+2348161195352&text=Hello, more information!">
                   <FontAwesomeIcon
                     className="text-[2.3rem] text-green-500"
                     icon={faWhatsappSquare}
                   />
                 </a>
+
                 <a href="https://www.twitter.com/bukoolarAce">
                   <FontAwesomeIcon
                     className="text-[2.3rem] text-blue-500"
                     icon={faTwitter}
                   />
                 </a>
-                <a href="https://www.instagram.com/bukoolarAce">
-                  {" "}
+                <a href="olasupobukolagmail.com">
                   <FontAwesomeIcon
-                    className="text-[2.3rem] text-[#F61E2D]"
-                    icon={faInstagramSquare}
+                    icon={faEnvelope}
+                    className="text-[2.3rem] text-red-500"
                   />
                 </a>
-               
-               
               </div>
               <form className="mt-5 space-y-3">
                 <input
