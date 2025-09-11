@@ -22,10 +22,10 @@ const Herosection = () => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
               target="_blank"
-              href="https://drive.google.com/file/d/164iT4D9KyJT1_k57aushvw1ScRBo4P6f/view?usp=drive_link"
+              href="https://drive.google.com/file/d/14w1iCQg7r6eibZp941GosqshVlHzCNw9/view?usp=sharing"
               className="btn btn-info"
             >
-              Download CV
+              View Resume
             </motion.a>
           </Fade>
         </div>

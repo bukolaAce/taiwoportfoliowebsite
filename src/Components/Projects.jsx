@@ -1,13 +1,11 @@
-import cardImage1 from "/images/TalentPro.jpg";
-
-import cardImage2 from "/images/medlab.jpg";
+import cardImage1 from "/images/smegear.jpg";
+import cardImage2 from "/images/TalentPro.jpg";
 import cardImage3 from "/images/labinsight.jpg";
-import cardImage4 from "/images/Cheftee.jpg";
+import cardImage4 from "/images/medlab.jpg";
 import cardImage5 from "/images/RecipeApp.jpg";
-
 import cardImage6 from "/images/biliophilia.jpg";
 
-// import { Link } from "react-router-dom";
+
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ image, description, Name, url }) => {
@@ -46,43 +44,38 @@ const Card = ({ image, description, Name, url }) => {
 };
 
 const cardsData = [
-  {
-    image: cardImage1,
-    title: "Card 1",
-    Name: "Talent Pro",
-    description:
-      "Match Making Tech Talent With Opportunities through AI-Driven Precision",
-    url: "https://talentpro.africa",
-  },
+  { image: cardImage1,  title: "Card 1",Name: "SmeGear",  description:
+      "Scalable platform empowering instructors to teach and students to learn with ease. Built with NextJs And Tailwind Css ",
+    url: "https://smegear.vercel.app",},
   {
     image: cardImage2,
     title: "Card 2",
-    Name: "A Laboratory Website",
-    description: "Built with React And Tailwind Css ",
-    url: "https://medlabapp.netlify.app",
+    Name: "Talent Pro",
+    description:
+      "AI-powered platform connecting top tech talent with the right opportunities.",
+    url: "https://talentpro.africa",
   },
-  {
+   {
     image: cardImage3,
     title: "Card 3",
     Name: "A Medical Blog",
     description:
-      "A Blog which allows users to post content. Built with React,FireBase And Styled with Tailwind Css ",
+      "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with React And Tailwind Css ",
     url: "https://lab-insights.vercel.app",
   },
   {
     image: cardImage4,
     title: "Card 4",
-    Name: "ChefTee",
-    description:
-      "Your Ai cooking assistant. Built with React And Styled with Tailwind Css ",
-    url: "https://cheftee.vercel.app",
+    Name: "Effective Health and Wellness",
+    description: "Medical Consultation Booking App. Built with React And Tailwind Css ",
+    url: "https://medlabapp.netlify.app",
   },
   {
     image: cardImage5,
     title: "Card 5",
     Name: "A Recipe App",
     description:
-      "Fetching Data from An Api. Built with React And Styled with Tailwind Css ",
+      "Unlock a world of flavors, step-by-step guidance, and delightful inspirations. Built with React And Tailwind Css ",
     url: "http://recipeapp0042.netlify.app",
   },
 
