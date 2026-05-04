@@ -1,6 +1,6 @@
-import cardImage1 from "/images/smegear.jpg";
-import cardImage2 from "/images/TalentPro.jpg";
-import cardImage3 from "/images/labinsight.jpg";
+import cardImage1 from "/images/TalentPro.jpg";
+import cardImage2 from "/images/Labinview.png";
+import cardImage3 from "/images/smegear.jpg";
 import cardImage4 from "/images/medlab.jpg";
 import cardImage5 from "/images/RecipeApp.jpg";
 import cardImage6 from "/images/biliophilia.jpg";
@@ -44,24 +44,29 @@ const Card = ({ image, description, Name, url }) => {
 };
 
 const cardsData = [
-  { image: cardImage1,  title: "Card 1",Name: "SmeGear",  description:
-      "Scalable platform empowering instructors to teach and students to learn with ease. Built with NextJs And Tailwind Css ",
-    url: "https://smegear.vercel.app",},
   {
-    image: cardImage2,
-    title: "Card 2",
+    image: cardImage1,
+    title: "Card 1",
     Name: "Talent Pro",
     description:
       "AI-powered platform connecting top tech talent with the right opportunities.",
-    url: "https://talentpro.africa",
+    url: "https://talentpro-beta.vercel.app/",
   },
-   {
-    image: cardImage3,
-    title: "Card 3",
-    Name: "A Medical Blog",
+  {
+    image: cardImage2,
+    title: "Card 2",
+    Name: "LabInView",
     description:
       "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with React And Tailwind Css ",
-    url: "https://lab-insights.vercel.app",
+    url: "https://labinview.com",
+  },
+  { 
+    image: cardImage3,  
+    title: "Card 3",
+    Name: "SmeGear",  
+    description:
+      "Scalable platform empowering instructors to teach and students to learn with ease. Built with NextJs And Tailwind Css ",
+    url: "https://smegear.vercel.app",
   },
   {
     image: cardImage4,
@@ -78,10 +83,9 @@ const cardsData = [
       "Unlock a world of flavors, step-by-step guidance, and delightful inspirations. Built with React And Tailwind Css ",
     url: "http://recipeapp0042.netlify.app",
   },
-
   {
     image: cardImage6,
-    title: "Card 5",
+    title: "Card 6",
     Name: "Bibliophilia",
     description: "A Book Library.Built with React And Tailwind Css ",
     url: "https://bibliophilia.netlify.app",
