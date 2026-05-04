@@ -12,7 +12,7 @@ const Herosection = () => {
           <Fade duration={2500} cascade triggerOnce={true}>
             <h1 className="mb-2 text-2xl font-bold">Hey, I'm</h1>
 
-            <h1 className="mb-2 font-extrabold text-7xl">Taiwo</h1>
+            <h1 className="mb-2 font-extrabold text-7xl">DevTee</h1>
 
             <p className="mb-4 text-2xl font-bold"> Software Developer</p>
             <motion.a
@@ -22,7 +22,7 @@ const Herosection = () => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
               target="_blank"
-              href="https://drive.google.com/file/d/14w1iCQg7r6eibZp941GosqshVlHzCNw9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1LwDLx1MciYlD2t29dH1_D6_NPMIs4gur/view?usp=sharing"
               className="btn btn-info"
             >
               View Resume
@@ -35,5 +35,8 @@ const Herosection = () => {
 };
 
 export default Herosection;
+
+// {change ? <h1 className="text-red-500">hello</h1>: <h2 className="text-green-500">hi</h2>}
+
 
 // {change ? <h1 className="text-red-500">hello</h1>: <h2 className="text-green-500">hi</h2>}
