@@ -57,7 +57,7 @@ const cardsData = [
     title: "Card 2",
     Name: "LabInView",
     description:
-      "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with React And Tailwind Css ",
+      "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with Next.Js,TypeScript,Tailwind Css for Styling and Neon Database",
     url: "https://labinview.com",
   },
   { 
