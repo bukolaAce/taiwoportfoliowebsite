@@ -6,7 +6,7 @@ const Footer = () => {
     <>
    <footer className="flex p-5 justify-center bg-[#0C151D]">
         <span className="text-center text-white">
-            &#169; DevTee. All rigths reserved
+            &#169; DevTee. All rights reserved
         </span>
     </footer>
     </>
