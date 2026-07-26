@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 import PropTypes from "prop-types";
+import { GoArrowUpRight } from "react-icons/go";
 
 // Swap these back to your local imports, e.g.:
 // import cardImage1 from "/images/TalentPro.jpg";
@@ -104,7 +104,7 @@ const Card = ({ image, description, Name, url }) => {
         <span className="ml-2 truncate font-mono text-[11px] text-[#5B6472]">
           {path}
         </span>
-        <ArrowUpRight className="ml-auto h-3.5 w-3.5 flex-shrink-0 text-[#5B6472] transition-all group-hover:text-[#7EE0C3] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        <GoArrowUpRight className="ml-auto h-3.5 w-3.5 flex-shrink-0 text-[#5B6472] transition-all group-hover:text-[#7EE0C3] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
       </div>
 
       {/* image */}
