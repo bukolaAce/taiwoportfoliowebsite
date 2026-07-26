@@ -1,52 +1,42 @@
-import cardImage1 from "/images/TalentPro.jpg";
-import cardImage2 from "/images/Labinview.png";
-import cardImage3 from "/images/smegear.jpg";
-import cardImage4 from "/images/medlab.jpg";
-import cardImage5 from "/images/RecipeApp.jpg";
-import cardImage6 from "/images/biliophilia.jpg";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import PropTypes from "prop-types";
 
+// Swap these back to your local imports, e.g.:
+// import cardImage1 from "/images/TalentPro.jpg";
+// Using placeholders here so the section previews without your asset paths.
+const cardImage1 = "https://picsum.photos/seed/talentpro/800/600";
+const cardImage2 = "https://picsum.photos/seed/labinview/800/600";
+const cardImage3 = "https://picsum.photos/seed/smegear/800/600";
+const cardImage4 = "https://picsum.photos/seed/medlab/800/600";
+const cardImage5 = "https://picsum.photos/seed/recipeapp/800/600";
+const cardImage6 = "https://picsum.photos/seed/bibliophilia/800/600";
 
+// ---- helpers ---------------------------------------------------------------
 
-// eslint-disable-next-line react/prop-types
-const Card = ({ image, description, Name, url }) => {
-  const handleClick = () => {
-    window.open(url, "_blank");
-  };
+// Pulls a tech list out of descriptions like "...Built with Next.js, TypeScript"
+function extractStack(description) {
+  const match = description.match(/built with (.+?)\.?$/i);
+  if (!match) return [];
+  return match[1]
+    .replace(/\band\b/gi, ",")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
 
-  return (
-    <>
-      {/* <a href={url} target="_blank"> */}
+function slugify(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
 
-      <div
-        className="relative overflow-hidden text-center cursor-pointer group card sm:w-96 w-[22rem] bg-primary text-primary-content rounded-none "
-        onClick={handleClick}
-        target="_blank"
-      >
-        <img
-          src={image}
-          alt=""
-          className="w-full h-full transition-transform transform group-hover:scale-105"
-        />
-        <div className="absolute inset-0 transition-opacity bg-black opacity-0 group-hover:opacity-80">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center ">
-              <h2 className="text-2xl font-bold text-white">{Name}</h2>
-              <p className="text-sm font-bold text-white">{description}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* </a> */}
-
-      {/* </a> */}
-    </>
-  );
-};
+// ---- data --------------------------------------------------------------
 
 const cardsData = [
   {
     image: cardImage1,
-    title: "Card 1",
     Name: "Talent Pro",
     description:
       "AI-powered platform connecting top tech talent with the right opportunities.",
@@ -54,50 +44,135 @@ const cardsData = [
   },
   {
     image: cardImage2,
-    title: "Card 2",
     Name: "LabInView",
     description:
-      "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with Next.Js,TypeScript,Tailwind Css for Styling and Neon Database",
+      "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with Next.js, TypeScript, Tailwind CSS, Neon",
     url: "https://labinview.com",
   },
-  { 
-    image: cardImage3,  
-    title: "Card 3",
-    Name: "SmeGear",  
+  {
+    image: cardImage3,
+    Name: "SmeGear",
     description:
-      "Scalable platform empowering instructors to teach and students to learn with ease. Built with NextJs And Tailwind Css ",
+      "Scalable platform empowering instructors to teach and students to learn with ease. Built with Next.js, Tailwind CSS",
     url: "https://smegear.vercel.app",
   },
   {
     image: cardImage4,
-    title: "Card 4",
     Name: "Effective Health and Wellness",
-    description: "Medical Consultation Booking App. Built with React And Tailwind Css ",
+    description:
+      "Medical consultation booking app. Built with React, Tailwind CSS",
     url: "https://medlabapp.netlify.app",
   },
   {
     image: cardImage5,
-    title: "Card 5",
     Name: "A Recipe App",
     description:
-      "Unlock a world of flavors, step-by-step guidance, and delightful inspirations. Built with React And Tailwind Css ",
+      "Unlock a world of flavors, step-by-step guidance, and delightful inspirations. Built with React, Tailwind CSS",
     url: "http://recipeapp0042.netlify.app",
   },
   {
     image: cardImage6,
-    title: "Card 6",
     Name: "Bibliophilia",
-    description: "A Book Library.Built with React And Tailwind Css ",
+    description: "A book library. Built with React, Tailwind CSS",
     url: "https://bibliophilia.netlify.app",
   },
 ];
 
-export const Projects = () => {
+// ---- card --------------------------------------------------------------
+
+const Card = ({ image, description, Name, url }) => {
+  const stack = extractStack(description);
+  const path = `~/projects/${slugify(Name)}`;
+
   return (
-    <div className="grid md:max-w-[53rem] sm:max-w-[55rem] lg:gap-8 gap-6 p-6 mx-auto md:gap-5 md:grid-cols-2 md:w-2/3  justify-center ">
-      {cardsData.map((card, index) => (
-        <Card className="rounded-xl" key={index} {...card} />
-      ))}
-    </div>
+    <motion.a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ y: -4 }}
+      className="group block overflow-hidden rounded-xl border border-[#1C2531] bg-[#10161F] transition-colors hover:border-[#2A3441]"
+    >
+      {/* fake window title bar — echoes the hero terminal */}
+      <div className="flex items-center gap-2 border-b border-[#1C2531] px-4 py-2.5">
+        <span className="h-2 w-2 rounded-full bg-[#FF5F56]/70" />
+        <span className="h-2 w-2 rounded-full bg-[#FFBD2E]/70" />
+        <span className="h-2 w-2 rounded-full bg-[#27C93F]/70" />
+        <span className="ml-2 truncate font-mono text-[11px] text-[#5B6472]">
+          {path}
+        </span>
+        <ArrowUpRight className="ml-auto h-3.5 w-3.5 flex-shrink-0 text-[#5B6472] transition-all group-hover:text-[#7EE0C3] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+      </div>
+
+      {/* image */}
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <img
+          src={image}
+          alt={Name}
+          className="h-full w-full object-cover grayscale-[40%] transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0E14] via-transparent to-transparent opacity-70" />
+      </div>
+
+      {/* body */}
+      <div className="p-5">
+        <h3 className="text-lg font-bold text-[#E6EDF3]">{Name}</h3>
+        <p className="mt-1.5 text-sm leading-relaxed text-[#9DA7B3] line-clamp-2">
+          {description.replace(/built with .+$/i, "").trim()}
+        </p>
+
+        {stack.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-1.5">
+            {stack.map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full border border-[#1C2531] bg-[#0D1319] px-2.5 py-1 font-mono text-[11px] text-[#7EE0C3]"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+    </motion.a>
   );
 };
+
+Card.propTypes = {
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  Name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};
+
+// ---- section --------------------------------------------------------------
+
+export const Projects = () => {
+  return (
+    <section className="bg-[#0A0E14] px-6 py-24">
+      <div className="max-w-6xl mx-auto">
+        <div className="mb-12">
+          <p className="font-mono text-xs text-[#7EE0C3]">$ ls ./projects</p>
+          <h2 className="mt-2 text-3xl font-bold text-[#E6EDF3] sm:text-4xl">
+            Selected work
+          </h2>
+          <p className="mt-2 max-w-xl text-sm text-[#7D8590]">
+            A handful of shipped, production products — click through to see
+            them running live.
+          </p>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {cardsData.map((card) => (
+            <Card key={card.Name} {...card} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
