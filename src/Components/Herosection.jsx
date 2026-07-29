@@ -85,7 +85,7 @@ const Herosection = () => {
         }}
       />
 
-      {/* ambient glow */}
+      {/* ambient glows */}
       <motion.div
         aria-hidden
         className="pointer-events-none absolute -top-40 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full blur-[120px]"
