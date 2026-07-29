@@ -11,7 +11,7 @@ const cardImage3 = "/images/TalentPro.jpg";
 const cardImage4 = "/images/smegear.jpg";
 const cardImage5 = "/images/medlab.jpg";
 const cardImage6 = "/images/RecipeApp.jpg";
-const cardImage7 = "/images/bibliophilia.jpg";
+const cardImage7 = "/images/biliophilia.jpg";
 
 // ---- helpers ---------------------------------------------------------------
 
@@ -40,21 +40,21 @@ const cardsData = [
     image: cardImage1,
     Name: "LabInView",
     description:
-      "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with Next.js, TypeScript, Tailwind CSS, Neon",
+      "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with Next.js, TypeScript, Tailwind CSS, Neon Database",
     url: "https://labinview.com",
   },
   {
     image: cardImage2,
     Name: "Flexo Ai",
     description:
-      "A personalized training program built by AI, tailored to your goals, experience, and schedule.",
-    url: "flexo-ai.vercel.app",
+      "A personalized training program built by AI, tailored to your goals, experience, and schedule. Built with Next.js, TypeScript, Tailwind CSS, Neon Database",
+    url: "https://flexo-ai.vercel.app",
   },
   {
     image: cardImage3,
     Name: "Talent Pro",
     description:
-      "AI-powered platform connecting top tech talent with the right opportunities.",
+      "AI-powered platform connecting top tech talent with the right opportunities. Built with Next.js, TypeScript, Tailwind CSS, Node Js",
     url: "https://talentpro-beta.vercel.app/",
   },
   
@@ -62,7 +62,7 @@ const cardsData = [
     image: cardImage4,
     Name: "SmeGear",
     description:
-      "Scalable platform empowering instructors to teach and students to learn with ease. Built with Next.js, Tailwind CSS",
+      "Scalable platform empowering instructors to teach and students to learn with ease. Built with Next.js, TypeScript, Tailwind CSS, Node Js",
     url: "https://smegear.vercel.app",
   },
   {
