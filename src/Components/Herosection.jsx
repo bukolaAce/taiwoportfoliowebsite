@@ -75,7 +75,7 @@ const Herosection = () => {
   const { lines, done } = useTypedScript(SCRIPT);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#0A0E14] text-[#E6EDF3] flex items-center py-20 px-6">
+    <section className="relative md:min-h-screen overflow-hidden bg-[#0A0E14] text-[#E6EDF3] flex items-center py-10 px-6">
       {/* dot-grid backdrop */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.35]"

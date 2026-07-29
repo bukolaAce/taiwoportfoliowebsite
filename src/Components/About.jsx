@@ -85,7 +85,7 @@ const About = () => {
           transition={{ duration: 0.25 }}
         >
           {active === "skills" ? (
-            <div className="max-w-3xl px-6 py-16 mx-auto">
+            <div className="max-w-3xl px-6 py-10 mx-auto">
               {SKILL_GROUPS.map((group) => (
                 <div key={group.label} className="mb-10 last:mb-0">
                   <p className="mb-4 font-mono text-xs text-[#7EE0C3]">

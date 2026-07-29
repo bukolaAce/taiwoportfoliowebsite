@@ -5,12 +5,13 @@ import { GoArrowUpRight } from "react-icons/go";
 // Swap these back to your local imports, e.g.:
 // import cardImage1 from "/images/TalentPro.jpg";
 // Using placeholders here so the section previews without your asset paths.
-const cardImage1 = "https://picsum.photos/seed/talentpro/800/600";
-const cardImage2 = "https://picsum.photos/seed/labinview/800/600";
-const cardImage3 = "https://picsum.photos/seed/smegear/800/600";
-const cardImage4 = "https://picsum.photos/seed/medlab/800/600";
-const cardImage5 = "https://picsum.photos/seed/recipeapp/800/600";
-const cardImage6 = "https://picsum.photos/seed/bibliophilia/800/600";
+const cardImage1 = "/images/Labinview.png";
+const cardImage2 = "/images/FlexoAi.png";
+const cardImage3 = "/images/TalentPro.jpg";
+const cardImage4 = "/images/smegear.jpg";
+const cardImage5 = "/images/medlab.jpg";
+const cardImage6 = "/images/RecipeApp.jpg";
+const cardImage7 = "/images/bibliophilia.jpg";
 
 // ---- helpers ---------------------------------------------------------------
 
@@ -37,41 +38,49 @@ function slugify(name) {
 const cardsData = [
   {
     image: cardImage1,
-    Name: "Talent Pro",
-    description:
-      "AI-powered platform connecting top tech talent with the right opportunities.",
-    url: "https://talentpro-beta.vercel.app/",
-  },
-  {
-    image: cardImage2,
     Name: "LabInView",
     description:
       "Dynamic platform for medical professionals to share knowledge, insights, and expertise. Built with Next.js, TypeScript, Tailwind CSS, Neon",
     url: "https://labinview.com",
   },
   {
+    image: cardImage2,
+    Name: "Flexo Ai",
+    description:
+      "A personalized training program built by AI, tailored to your goals, experience, and schedule.",
+    url: "flexo-ai.vercel.app",
+  },
+  {
     image: cardImage3,
+    Name: "Talent Pro",
+    description:
+      "AI-powered platform connecting top tech talent with the right opportunities.",
+    url: "https://talentpro-beta.vercel.app/",
+  },
+  
+  {
+    image: cardImage4,
     Name: "SmeGear",
     description:
       "Scalable platform empowering instructors to teach and students to learn with ease. Built with Next.js, Tailwind CSS",
     url: "https://smegear.vercel.app",
   },
   {
-    image: cardImage4,
+    image: cardImage5,
     Name: "Effective Health and Wellness",
     description:
       "Medical consultation booking app. Built with React, Tailwind CSS",
     url: "https://medlabapp.netlify.app",
   },
   {
-    image: cardImage5,
+    image: cardImage6,
     Name: "A Recipe App",
     description:
       "Unlock a world of flavors, step-by-step guidance, and delightful inspirations. Built with React, Tailwind CSS",
     url: "http://recipeapp0042.netlify.app",
   },
   {
-    image: cardImage6,
+    image: cardImage7,
     Name: "Bibliophilia",
     description: "A book library. Built with React, Tailwind CSS",
     url: "https://bibliophilia.netlify.app",
@@ -152,7 +161,7 @@ Card.propTypes = {
 
 export const Projects = () => {
   return (
-    <section className="bg-[#0A0E14] px-6 py-24">
+    <section className="bg-[#0A0E14] px-6 py-10">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
           <p className="font-mono text-xs text-[#7EE0C3]">$ ls ./projects</p>
