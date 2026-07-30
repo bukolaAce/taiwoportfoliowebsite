@@ -7,11 +7,10 @@ import { GoArrowUpRight } from "react-icons/go";
 // Using placeholders here so the section previews without your asset paths.
 const cardImage1 = "/images/Labinview.png";
 const cardImage2 = "/images/FlexoAi.png";
-const cardImage3 = "/images/TalentPro.jpg";
-const cardImage4 = "/images/smegear.jpg";
-const cardImage5 = "/images/medlab.jpg";
-const cardImage6 = "/images/RecipeApp.jpg";
-const cardImage7 = "/images/biliophilia.jpg";
+const cardImage3 = "/images/smegear.jpg";
+const cardImage4 = "/images/medlab.jpg";
+const cardImage5 = "/images/RecipeApp.jpg";
+const cardImage6 = "/images/biliophilia.jpg";
 
 // ---- helpers ---------------------------------------------------------------
 
@@ -47,40 +46,32 @@ const cardsData = [
     image: cardImage2,
     Name: "Flexo Ai",
     description:
-      "A personalized training program built by AI, tailored to your goals, experience, and schedule. Built with Next.js, TypeScript, Tailwind CSS, Neon Database",
+      "A personalized training program by AI, tailored to your goals, experience, and schedule. Built with Next.js, TypeScript, Tailwind CSS, Neon Database",
     url: "https://flexo-ai-v1.vercel.app/",
   },
   {
     image: cardImage3,
-    Name: "Talent Pro",
-    description:
-      "AI-powered platform connecting top tech talent with the right opportunities. Built with Next.js, TypeScript, Tailwind CSS, Node Js",
-    url: "https://talentpro-beta.vercel.app/",
-  },
-  
-  {
-    image: cardImage4,
     Name: "SmeGear",
     description:
       "Scalable platform empowering instructors to teach and students to learn with ease. Built with Next.js, TypeScript, Tailwind CSS, Node Js",
     url: "https://smegear.vercel.app",
   },
   {
-    image: cardImage5,
+    image: cardImage4,
     Name: "Effective Health and Wellness",
     description:
       "Medical consultation booking app. Built with React, Tailwind CSS",
     url: "https://medlabapp.netlify.app",
   },
   {
-    image: cardImage6,
+    image: cardImage5,
     Name: "A Recipe App",
     description:
       "Unlock a world of flavors, step-by-step guidance, and delightful inspirations. Built with React, Tailwind CSS",
     url: "http://recipeapp0042.netlify.app",
   },
   {
-    image: cardImage7,
+    image: cardImage6,
     Name: "Bibliophilia",
     description: "A book library. Built with React, Tailwind CSS",
     url: "https://bibliophilia.netlify.app",
