@@ -166,7 +166,7 @@ const Herosection = () => {
             whileHover={{ y: -2, boxShadow: "0 0 24px 0 rgba(126,224,195,0.35)" }}
             target="_blank"
             rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1LwDLx1MciYlD2t29dH1_D6_NPMIs4gur/view?usp=sharing"
+            href="https://drive.google.com/file/d/1MsphZW5NPdp-988wRgSgUsyuWf6Nr0Vq/view?usp=drive_link"
             className="group flex items-center gap-2 rounded-lg border border-[#7EE0C3]/40 bg-[#7EE0C3]/10 px-5 py-3 text-[#7EE0C3] transition-colors hover:bg-[#7EE0C3]/20"
           >
             ./view-resume
