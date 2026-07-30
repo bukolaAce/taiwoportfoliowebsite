@@ -7,7 +7,7 @@ import { GoArrowUpRight } from "react-icons/go";
 // Using placeholders here so the section previews without your asset paths.
 const cardImage1 = "/images/Labinview.png";
 const cardImage2 = "/images/FlexoAi.png";
-const cardImage3 = "/images/smegear.jpg";
+const cardImage3 = "/images/smegear.png";
 const cardImage4 = "/images/medlab.jpg";
 const cardImage5 = "/images/RecipeApp.jpg";
 const cardImage6 = "/images/biliophilia.jpg";
