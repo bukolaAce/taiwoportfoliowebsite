@@ -48,7 +48,7 @@ const cardsData = [
     Name: "Flexo Ai",
     description:
       "A personalized training program built by AI, tailored to your goals, experience, and schedule. Built with Next.js, TypeScript, Tailwind CSS, Neon Database",
-    url: "https://flexo-ai.vercel.app",
+    url: "https://flexo-ai-v1.vercel.app/",
   },
   {
     image: cardImage3,
